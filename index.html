@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>缠论108课学习</title>
+<meta name="description" content="《教你炒股票108课》深度精读与无前视训练 · 离线学习应用">
+<meta name="theme-color" content="#101820">
+<!-- iOS PWA 适配 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="缠论学习">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div id="topbar-title">缠论108课学习</div>
+    <div id="topbar-sub">深度精读 · 无前视训练</div>
+  </header>
+
+  <main id="view" aria-live="polite">
+    <div id="boot-loading">
+      <div class="spin"></div>
+      <p>正在加载学习数据…</p>
+    </div>
+  </main>
+
+  <nav id="tabbar" role="tablist">
+    <a class="tab" href="#/home" data-tab="home" role="tab">
+      <span class="tab-ico">⌂</span><span class="tab-label">首页</span>
+    </a>
+    <a class="tab" href="#/lessons" data-tab="lessons" role="tab">
+      <span class="tab-ico">☰</span><span class="tab-label">课次</span>
+    </a>
+    <a class="tab" href="#/read" data-tab="read" role="tab">
+      <span class="tab-ico">✎</span><span class="tab-label">阅读</span>
+    </a>
+    <a class="tab" href="#/dict" data-tab="dict" role="tab">
+      <span class="tab-ico">词</span><span class="tab-label">词典</span>
+    </a>
+    <a class="tab" href="#/review" data-tab="review" role="tab">
+      <span class="tab-ico">✓</span><span class="tab-label">复盘</span>
+    </a>
+  </nav>
+</div>
+
+<!-- 图片放大查看浮层 -->
+<div id="lightbox" hidden>
+  <img id="lightbox-img" alt="放大查看">
+  <div id="lightbox-cap"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

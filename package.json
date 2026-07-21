@@ -1,0 +1,9 @@
+{
+  "name": "chanlun-108-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "缠论108课学习 · 离线 PWA（纯静态，无构建步骤）",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
